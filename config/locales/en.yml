@@ -30,4 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  choices:
+    what_do_you_search: "What do you search?"
+    i_want_to_adopt: "I want to adopt"
+    cats: "Cats"
+    dogs: "Dogs"
+    is_it_a_protector: "Is it a protector?"
+    enter_here: "Enter here"
+    i_want_to_help_in_other_ways: "I want to help in other ways"

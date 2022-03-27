@@ -1,0 +1,33 @@
+<div class="center_align">
+    <h4 class="mt-5"><%= t("choices.what_do_you_search") %></h4>
+    <div class="d-flex mt-5">
+        <div id="want-adopt-icon" class="mt-5 mb-5" onclick="openOptions()">
+            <img class="rounded-circle" width="150" height="150" src="images/preview-1.jpg" style="object-fit: cover">
+            <p class="mt-2"><%= t("choices.i_want_to_adopt") %></p>
+        </div>
+        <div id="adopt-options" class="align-items-center">
+            <div>
+                <img class="rounded-circle" width="80" height="80" src="images/choices-option-1.jpg" style="object-fit: cover">
+                <p class="mt-2"><%= t("choices.dogs") %></p>
+            </div>
+            <div class="mx-3"></div>
+            <div>
+                <img class="rounded-circle" width="80" height="80" src="images/choices-option-2.jpg" style="object-fit: cover">
+                <p class="mt-2"><%= t("choices.cats") %></p>
+            </div>
+        </div>
+        <div class="mx-5"></div>
+        <div class="help_other_forms mt-5 mb-5">
+            <img class="rounded-circle" width="150" height="150" src="images/preview-2.jpg" style="object-fit: cover">
+            <p class="mt-2"><%= t("choices.i_want_to_help_in_other_ways") %></p>
+        </div>
+    </div>
+    <p class="mt-5"><%= t("choices.is_it_a_protector") %> <%= t("choices.enter_here") %></p>
+</div>
+<script>
+    document.getElementById("adopt-options").style.display = "none"
+    function openOptions() {
+        document.getElementById("want-adopt-icon").style.display = "none"
+        document.getElementById("adopt-options").style.display = "flex"
+    }
+</script>
